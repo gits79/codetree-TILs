@@ -128,7 +128,8 @@ public class Main {
 						}
 						// 기사를 만난 경우
 						else {
-							canGo.add(isKnight(i, j, num, dir));
+							if(!canGo.contains(isKnight(i, j, num, dir)))
+								canGo.add(isKnight(i, j, num, dir));
 							moveChk(isKnight(i, j, num, dir), dir);
 						}
 					}
