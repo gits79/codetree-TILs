@@ -67,8 +67,7 @@ public class Main {
 
 			if (0 <= nx && nx < N && 0 <= ny && ny < M) {
 				int next = map[nx][ny];
-				if (next == 0)
-					map[nx][ny] = die[3][1];
+				
 
 				switch (dir) {
 				case 0:
@@ -84,7 +83,9 @@ public class Main {
 					Down(die);
 					break;
 				}
-				if (next != 0) {
+                if (next == 0)
+					map[nx][ny] = die[3][1];
+				else  {
 					die[3][1] = next;
 					map[nx][ny] = 0;
 				}
