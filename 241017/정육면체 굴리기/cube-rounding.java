@@ -28,13 +28,13 @@ public class Main {
 		}
 	}
 
-	static void Left(int[][] arr) {
+	static void Right(int[][] arr) {
 		swap(1, 0, 3, 1, arr);
 		swap(1, 0, 1, 2, arr);
 		swap(1, 0, 1, 1, arr);
 	}
 
-	static void Right(int[][] arr) {
+	static void Left(int[][] arr) {
 		swap(1, 0, 3, 1, arr);
 		swap(1, 1, 3, 1, arr);
 		swap(3, 1, 1, 2, arr);
